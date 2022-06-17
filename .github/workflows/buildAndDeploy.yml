@@ -151,7 +151,7 @@ jobs:
           
           
   tag_release:
-    needs: deployToBranch
+    needs: [deployToBranch,deployPages]
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v2
